@@ -1,0 +1,16 @@
+{
+    "name": "student/dev-dependency",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Anna Popescu",
+            "email": "anna@example.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^3.12"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^8.1"
+    }
+}

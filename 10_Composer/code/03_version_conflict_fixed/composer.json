@@ -1,0 +1,8 @@
+{
+    "name": "student/version-conflict",
+    "type": "project",
+    "require": {
+        "psr/log": "^3.0",
+        "monolog/monolog": "^3.12"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "student/first-project",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Anna Popescu",
+            "email": "anna@example.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^3.12"
+    }
+}
