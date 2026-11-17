@@ -1,0 +1,24 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Обратная связь{% endblock %}
+
+{% block content %}
+    <h1>Обратная связь</h1>
+    {% if sent %}
+        <p>Спасибо, {{ form.name }}! Сообщение получено.</p>
+    {% else %}
+        <form method="post">
+            {% include 'partials/field.html.twig' with {
+                label: 'Имя', name: 'name', value: form.name, error: errors.name|default('')
+            } only %}
+            {% include 'partials/field.html.twig' with {
+                label: 'Email', name: 'email', value: form.email, error: errors.email|default('')
+            } only %}
+            {% include 'partials/field.html.twig' with {
+                label: 'Сообщение', name: 'message', value: form.message,
+                error: errors.message|default(''), multiline: true
+            } only %}
+            <button type="submit">Отправить</button>
+        </form>
+    {% endif %}
+{% endblock %}

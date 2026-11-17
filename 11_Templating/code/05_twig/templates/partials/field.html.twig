@@ -1,0 +1,13 @@
+<p>
+    <label>
+        {{ label }}
+        {% if multiline|default(false) %}
+            <textarea name="{{ name }}">{{ value }}</textarea>
+        {% else %}
+            <input name="{{ name }}" value="{{ value }}">
+        {% endif %}
+    </label>
+    {% if error %}
+        <span class="error">{{ error }}</span>
+    {% endif %}
+</p>

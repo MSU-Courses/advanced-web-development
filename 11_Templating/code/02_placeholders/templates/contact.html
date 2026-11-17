@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>{{title}} - {{siteName}}</title>
+</head>
+<body>
+    <header>{{siteName}}</header>
+    <main>
+        <h1>{{title}}</h1>
+        <form method="post">
+            <p><label>Имя <input name="name" value="{{name}}"></label> {{nameError}}</p>
+            <p><label>Email <input name="email" value="{{email}}"></label> {{emailError}}</p>
+            <p><label>Сообщение <textarea name="message">{{message}}</textarea></label> {{messageError}}</p>
+            <button type="submit">Отправить</button>
+        </form>
+    </main>
+    <footer>Вопросы: {{adminEmail}}</footer>
+</body>
+</html>

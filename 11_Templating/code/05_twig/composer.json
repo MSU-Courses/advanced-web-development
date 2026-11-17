@@ -1,0 +1,10 @@
+{
+    "name": "student/templating-twig",
+    "description": "Форма обратной связи на Twig",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": ">=8.1",
+        "twig/twig": "^3.0"
+    }
+}

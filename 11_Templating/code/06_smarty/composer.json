@@ -1,0 +1,10 @@
+{
+    "name": "student/templating-smarty",
+    "description": "Форма обратной связи на Smarty",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": ">=8.1",
+        "smarty/smarty": "^5.0"
+    }
+}
